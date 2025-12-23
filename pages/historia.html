@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacto - Stand Store</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -11,9 +11,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../styles/styles.css" />
-  </head>
-
-  <body>
+</head>
+<body>
     <header>
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
@@ -57,47 +56,47 @@
         </div>
       </nav>
     </header>
-    <main>
-      <div class=main-bgcontenedor>
-		<section>
-		  <h2>Contáctanos</h2>
-		  <form action="#" method="post">
-			<div>
-			  <label for="nombre">Nombre:</label>
-			  <input type="text" id="nombre" name="nombre" required />
-			</div>
-			<div>
-			  <label for="apellido">Apellido:</label>
-			  <input type="text" id="apellido" name="apellido" required />
-			</div>
-			<div>
-			  <label for="email">Correo electrónico:</label>
-			  <input type="email" id="email" name="email" required />
-			</div>
-			<div>
-			  <label for="sexo">Sexo:</label>
-			  <select id="sexo" name="sexo" required>
-				<option value="">Seleccione...</option>
-				<option value="hombre">Hombre</option>
-				<option value="mujer">Mujer</option>
-				<option value="otro">Otro</option>
-			  </select>
-			</div>
-			<div>
-			  <label for="nacionalidad">Nacionalidad:</label>
-			  <input type="text" id="nacionalidad" name="nacionalidad" required />
-			</div>
-			<div>
-			  <label for="mensaje">Tu mensaje:</label>
-			  <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-			</div>
-			<button type="submit">Enviar</button>
-		  </form>
-		</section>
-	  </div>
-    </main>
 
-    <footer class="bg-dark text-white mt-5">
+    <main class="container my-5">
+    <div class="main-bgcontenedor">
+        <h2 class="mb-4 text-center">Nuestra Historia</h2>
+        <section class="mb-5">
+          <p class="lead text-center">
+            La Tienda de Stands nació con la misión de acercar el poder de los Stands a todos aquellos que buscan fuerza, protección o habilidades únicas.
+          </p>
+        </section>
+        <section class="row align-items-center mb-5">
+          <div class="col-md-6">
+            <img src="../images/origen-flecha.webp" class="img-fluid rounded" alt="Origen de los Stands">
+          </div>
+          <div class="col-md-6">
+            <h3>El Origen</h3>
+            <p>
+              Inspirados en las leyendas de Joestar y las batallas que marcaron generaciones, decidimos crear un espacio donde cada persona pudiera encontrar el Stand que mejor refleje su espíritu.
+            </p>
+          </div>
+        </section>
+        <section class="row align-items-center mb-5">
+          <div class="col-md-6 order-md-2">
+            <img src="../images/stands-evo.jpg" class="img-fluid rounded" alt="Evolución de los Stands">
+          </div>
+          <div class="col-md-6 order-md-1">
+            <h3>La Evolución</h3>
+            <p>
+              Con el tiempo, nuestra tienda se convirtió en un referente. Incorporamos Stands de distintas generaciones y expandimos nuestro catálogo para cubrir todas las necesidades.
+            </p>
+          </div>
+        </section>
+        <section class="text-center">
+          <h3>Hoy</h3>
+          <p>
+            Actualmente, seguimos comprometidos con ofrecer Stands auténticos y de calidad, manteniendo viva la tradición y el legado de JoJo’s Bizarre Adventure.
+          </p>
+        </section>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white mt-5">
       <div class="container py-4">
         <div class="row">
           <div class="col-md-4 mb-3">
@@ -150,5 +149,8 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-  </body>
+
+
+    
+</body>
 </html>

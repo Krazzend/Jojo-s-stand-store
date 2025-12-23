@@ -45,10 +45,10 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link navegacion-item" href="#">Historia</a>
+                <a class="nav-link navegacion-item" href="./pages/historia.html">Historia</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link navegacion-item" href="#">FAQ</a>
+                <a class="nav-link navegacion-item" href="./pages/faq.html">FAQ</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link navegacion-item" href="./pages/contacto.html"
@@ -63,160 +63,221 @@
 
     <main>
       <section>
-		<div class="hero-section">
-			<h2>Bienvenido a Stand Store</h2>
-			<p>¡Libera tu espiritu de lucha!</p>
-		</div>
-	  </section>
+        <div class="hero-section">
+          <h2>Bienvenido a Stand Store</h2>
+          <p>¡Libera tu espiritu de lucha!</p>
+        </div>
+      </section>
       <div class="main-bgcontenedor">
-		<section>
-		  <h2>Artículos destacados</h2>
-		  <article>
-			<img src="./images/star_platinum.png" alt="Stand Star Platinum" />
-			<h3>Star Platinum</h3>
-			<p>
-			  Stand tan fuerte como para poder destruir diamantes con sus puños y
-			  a la vez tan preciso como para poder hacer una cirugía cerebral sin
-			  consecuencias.
-			</p>
-			<details>
-			  <summary>Estadísticas</summary>
-			  <table>
-				<tr>
-				  <th>Poder</th>
-				  <th>Velocidad</th>
-				  <th>Rango</th>
-				  <th>Resistencia</th>
-				  <th>Precisión</th>
-				  <th>Potencial</th>
-				</tr>
-				<tr>
-				  <td>A</td>
-				  <td>A</td>
-				  <td>C</td>
-				  <td>A</td>
-				  <td>A</td>
-				  <td>A</td>
-				</tr>
-			  </table>
-			</details>
-			<p>Precio: $300000</p>
-			<button>Comprar</button>
-		  </article>
-		  <article>
-			<img src="./images/the_world.webp" alt="Stand The World" />
-			<h3>The World</h3>
-			<p>
-			  Stand fuerte y ágil que cuenta con la gran habilidad de poder
-			  detener el tiempo.
-			</p>
-			<details>
-			  <summary>Estadísticas</summary>
-			  <table>
-				<tr>
-				  <th>Poder</th>
-				  <th>Velocidad</th>
-				  <th>Rango</th>
-				  <th>Resistencia</th>
-				  <th>Precisión</th>
-				  <th>Potencial</th>
-				</tr>
-				<tr>
-				  <td>A</td>
-				  <td>A</td>
-				  <td>C</td>
-				  <td>A</td>
-				  <td>B</td>
-				  <td>B</td>
-				</tr>
-			  </table>
-			</details>
-			<p>Precio: $500000</p>
-			<button>Comprar</button>
-		  </article>
-		  <article>
-			<img src="./images/crazy_diamond.webp" alt="Stand Crazy Diamond" />
-			<h3>Crazy Diamond</h3>
-			<p>
-			  Stand con la capacidad de curar personas y revertir objetos a su
-			  estado original.
-			</p>
-			<details>
-			  <summary>Estadísticas</summary>
-			  <table>
-				<tr>
-				  <th>Poder</th>
-				  <th>Velocidad</th>
-				  <th>Rango</th>
-				  <th>Resistencia</th>
-				  <th>Precisión</th>
-				  <th>Potencial</th>
-				</tr>
-				<tr>
-				  <td>A</td>
-				  <td>A</td>
-				  <td>D</td>
-				  <td>B</td>
-				  <td>B</td>
-				  <td>C</td>
-				</tr>
-			  </table>
-			</details>
-			<p>Precio: $200000</p>
-			<button>Comprar</button>
-		  </article>
-		</section>
-		<section>
-		  <h2>Sobre nosotros</h2>
-		  <p>
-			Somos fanáticos de Jojo's Bizarre Adventure y decidimos crear la
-			primera tienda dedicada exclusivamente a Stands. Nuestro objetivo es
-			ofrecerte los mejores Stands con la mejor calidad y servicio.
-		  </p>
-		</section>
-		<section>
-		  <h2>Opiniones de nuestros clientes</h2>
-		  <blockquote>
-			<p>
-			  “¡Star Platinum cambió mi vida! Ahora puedo detener el tiempo para
-			  llegar puntual al trabajo.”
-			</p>
-			<footer>— Jotaro K.</footer>
-		  </blockquote>
-		  <blockquote>
-			<p>“Crazy Diamond curó mi tostadora. ¡Increíble!”</p>
-			<footer>— Josuke H.</footer>
-		  </blockquote>
-		</section>
-	  </div>
+        <section class="articulos">
+          <h2>Artículos destacados</h2>
+          <article>
+            <div class="card mb-3" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="./images/star_platinum.png"
+                    class="img-fluid rounded-start"
+                    alt="Stand Star Platinum"
+                  />
+                </div>
+
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Star Platinum</h5>
+
+                    <p class="card-text">
+                      Stand tan fuerte como para poder destruir diamantes con
+                      sus puños y a la vez tan preciso como para poder hacer una
+                      cirugía cerebral sin consecuencias.
+                    </p>
+
+                    <details>
+                      <summary>Estadísticas</summary>
+                      <div class="stats-grid mt-2">
+                        <div class="stat-header">Poder</div>
+                        <div class="stat-header">Velocidad</div>
+                        <div class="stat-header">Rango</div>
+                        <div class="stat-header">Resistencia</div>
+                        <div class="stat-header">Precisión</div>
+                        <div class="stat-header">Potencial</div>
+
+                        <div class="stat-value">A</div>
+                        <div class="stat-value">A</div>
+                        <div class="stat-value">C</div>
+                        <div class="stat-value">A</div>
+                        <div class="stat-value">A</div>
+                        <div class="stat-value">A</div>
+                      </div>
+                    </details>
+
+                    <p class="card-text mt-2">
+                      <strong>Precio:</strong> $300000
+                    </p>
+
+                    <button class="btn btn-primary">Comprar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="card mb-3" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="./images/the_world.webp"
+                    class="img-fluid rounded-start"
+                    alt="Stand The World"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">The World</h5>
+                    <p class="card-text">
+                      Stand fuerte y ágil que cuenta con la gran habilidad de
+                      poder detener el tiempo.
+                    </p>
+                    <details>
+                      <summary>Estadísticas</summary>
+                      <div class="stats-grid mt-2">
+                        <div class="stat-header">Poder</div>
+                        <div class="stat-header">Velocidad</div>
+                        <div class="stat-header">Rango</div>
+                        <div class="stat-header">Resistencia</div>
+                        <div class="stat-header">Precisión</div>
+                        <div class="stat-header">Potencial</div>
+                        <div class="stat-value">A</div>
+                        <div class="stat-value">A</div>
+                        <div class="stat-value">C</div>
+                        <div class="stat-value">A</div>
+                        <div class="stat-value">B</div>
+                        <div class="stat-value">B</div>
+                      </div>
+                    </details>
+                    <p class="card-text mt-2">
+                      <strong>Precio:</strong> $500000
+                    </p>
+                    <button class="btn btn-primary">Comprar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="card mb-3" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="./images/crazy_diamond.webp"
+                    class="img-fluid rounded-start"
+                    alt="Stand Crazy Diamond"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Crazy Diamond</h5>
+                    <p class="card-text">
+                      Stand con la capacidad de curar personas y revertir
+                      objetos a su estado original.
+                    </p>
+                    <details>
+                      <summary>Estadísticas</summary>
+                      <div class="stats-grid mt-2">
+                        <div class="stat-header">Poder</div>
+                        <div class="stat-header">Velocidad</div>
+                        <div class="stat-header">Rango</div>
+                        <div class="stat-header">Resistencia</div>
+                        <div class="stat-header">Precisión</div>
+                        <div class="stat-header">Potencial</div>
+                        <div class="stat-value">A</div>
+                        <div class="stat-value">A</div>
+                        <div class="stat-value">D</div>
+                        <div class="stat-value">B</div>
+                        <div class="stat-value">B</div>
+                        <div class="stat-value">C</div>
+                      </div>
+                    </details>
+                    <p class="card-text mt-2">
+                      <strong>Precio:</strong> $200000
+                    </p>
+                    <button class="btn btn-primary">Comprar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section>
+          <h2>Sobre nosotros</h2>
+          <p>
+            Somos fanáticos de Jojo's Bizarre Adventure y decidimos crear la
+            primera tienda dedicada exclusivamente a Stands. Nuestro objetivo es
+            ofrecerte los mejores Stands con la mejor calidad y servicio.
+          </p>
+        </section>
+        <section>
+          <h2>Opiniones de nuestros clientes</h2>
+          <blockquote>
+            <p>
+              “¡Star Platinum cambió mi vida! Ahora puedo detener el tiempo para
+              llegar puntual al trabajo.”
+            </p>
+            <footer>— Jotaro K.</footer>
+          </blockquote>
+          <blockquote>
+            <p>“Crazy Diamond curó mi tostadora. ¡Increíble!”</p>
+            <footer>— Josuke H.</footer>
+          </blockquote>
+        </section>
+      </div>
     </main>
 
-    <footer>
-      <div>
-        <h2>Stand Store</h2>
-        <p>¡Tu tienda de Stands de Jojo's Bizarre Adventure!</p>
-      </div>
+    <footer class="bg-dark text-white mt-5">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <h5>Sobre nosotros</h5>
+            <p>
+              Somos una tienda dedicada a la venta de Stands únicos y poderosos.
+            </p>
+          </div>
 
-      <nav class="footer-nav">
-        <ul>
-          <li><a href="./index.html">Inicio</a></li>
-          <li><a href="./pages/productos.html">Productos</a></li>
-          <li><a href="./pages/contacto.html">Contáctanos</a></li>
-        </ul>
-      </nav>
+          <div class="col-md-4 mb-3">
+            <h5>Enlaces rápidos</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="./index.html" class="text-white text-decoration-none">Inicio</a>
+              </li>
+              <li>
+                <a href="./pages/productos.html" class="text-white text-decoration-none">Catálogo</a>
+              </li>
+              <li>
+                <a href="./pages/contacto.html" class="text-white text-decoration-none">Contacto</a>
+              </li>
+              <li>
+                <a href="./pages/faq.html" class="text-white text-decoration-none">FAQ</a>
+              </li>
+            </ul>
+          </div>
 
-      <div class="footer-social">
-        <p>Síguenos en:</p>
-        <ul>
-          <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
-          <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
-          <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-          <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
-        </ul>
-      </div>
+          <div class="col-md-4 mb-3">
+            <h5>Contacto</h5>
+            <ul class="list-unstyled">
+              <li>Email: info@stands.com</li>
+              <li>Tel: +54 11 1234 5678</li>
+              <li>Lanús Oeste, Buenos Aires</li>
+            </ul>
+          </div>
+        </div>
 
-      <div class="footer-bottom">
-        <p>&copy; 2025 Stand Store. Todos los derechos reservados.</p>
+        <div class="row">
+          <div class="col-12 text-center border-top border-light pt-3">
+            <p class="mb-0">
+              &copy; 2025 Tienda de Stands. Todos los derechos reservados.
+            </p>
+          </div>
+        </div>
       </div>
     </footer>
 
