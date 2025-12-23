@@ -1,99 +1,139 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Contacto - Stand Store</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-	<link rel="stylesheet" href="../styles/styles.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - Stand Store</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
 
-<body>
-  <main>
+  <body>
     <header>
-		<h1>Stand Store: Tu tienda de Stands</h1>
-		<nav>
-			<ul>
-			<li><a href="../index.html">Inicio</a></li>
-			<li><a href="./productos.html">Productos</a></li>
-			<li><a href="./contacto.html">Contáctanos</a></li>
-			</ul>
-		</nav>
-	</header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"
+            ><h1>Stand Store: Tu tienda de Stands</h1></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link navegacion-item"
+                  aria-current="page"
+                  href="./productos.html"
+                  >Productos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navegacion-item" href="#">Historia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navegacion-item" href="#">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navegacion-item" href="./contacto.html"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Contáctanos</h2>
+        <form action="#" method="post">
+          <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required />
+          </div>
 
-    <section>
-		<h2>Contáctanos</h2>
-		<form action="#" method="post">
-		
-		  <div>
-			<label for="nombre">Nombre:</label>
-			<input type="text" id="nombre" name="nombre" required>
-		  </div>
-		
-		  <div>
-			<label for="apellido">Apellido:</label>
-			<input type="text" id="apellido" name="apellido" required>
-		  </div>
-		
-		  <div>
-			<label for="email">Correo electrónico:</label>
-			<input type="email" id="email" name="email" required>
-		  </div>
-		
-		  <div>
-			<label for="sexo">Sexo:</label>
-			<select id="sexo" name="sexo" required>
-			  <option value="">Seleccione...</option>
-			  <option value="hombre">Hombre</option>
-			  <option value="mujer">Mujer</option>
-			  <option value="otro">Otro</option>
-			</select>
-		  </div>
-		
-		  <div>
-			<label for="nacionalidad">Nacionalidad:</label>
-			<input type="text" id="nacionalidad" name="nacionalidad" required>
-		  </div>
-		
-		  <div>
-			<label for="mensaje">Tu mensaje:</label>
-			<textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-		  </div>
-		
-		  <button type="submit">Enviar</button>
-		</form>
-	</section>
-  </main>
+          <div>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required />
+          </div>
 
-  <footer>
-		<div>
-			<h2>Stand Store</h2>
-			<p>¡Tu tienda de Stands de Jojo's Bizarre Adventure!</p>
-		</div>
-		
-		<nav class="footer-nav">
-			<ul>
-				<li><a href="../index.html">Inicio</a></li>
-				<li><a href="./productos.html">Productos</a></li>
-				<li><a href="./contacto.html">Contáctanos</a></li>
-			</ul>
-    	</nav>
+          <div>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
 
-		<div class="footer-social">
-			<p>Síguenos en:</p>
-			<ul>
-				<li><a href="https://facebook.com" target="_blank">Facebook</a></li>
-				<li><a href="https://twitter.com" target="_blank">Twitter</a></li>
-				<li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-				<li><a href="https://youtube.com" target="_blank">YouTube</a></li>
-			</ul>
-    	</div>
-		
-		<div class="footer-bottom">
-    		<p>&copy; 2025 Stand Store. Todos los derechos reservados.</p>
-		</div>
-	</footer>
+          <div>
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" name="sexo" required>
+              <option value="">Seleccione...</option>
+              <option value="hombre">Hombre</option>
+              <option value="mujer">Mujer</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
+          <div>
+            <label for="nacionalidad">Nacionalidad:</label>
+            <input type="text" id="nacionalidad" name="nacionalidad" required />
+          </div>
+
+          <div>
+            <label for="mensaje">Tu mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+          </div>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <h2>Stand Store</h2>
+        <p>¡Tu tienda de Stands de Jojo's Bizarre Adventure!</p>
+      </div>
+
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./productos.html">Productos</a></li>
+          <li><a href="./contacto.html">Contáctanos</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-social">
+        <p>Síguenos en:</p>
+        <ul>
+          <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+          <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+          <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+          <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Stand Store. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

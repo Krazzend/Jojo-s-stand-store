@@ -1,60 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
 body {
-  font-family: 'Shippori Antique', sans-serif;
-  background-color: #f4f4f4;
+  background-image: url(../images/wallpaper_página.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: "Shippori Antique", sans-serif;
   margin: 0;
   padding: 0;
   color: #222;
 }
 
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  padding: 60px 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 20px;
+  color: white;
+  height: 100vh;
+}
+
+.hero-section p {
+  font-size: 24px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.hero-section h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: white;
+}
+
 
 header {
-  background-color: #4b0082; 
+  background-color: #4b0082;
+  position: sticky; 
+  top: 0;           
+  z-index: 1000;
+}
+
+h1 {
   color: white;
-  padding: 15px;
-  text-align: center;
 }
 
-header h1 {
-  margin: 0;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 10px 0 0 0;
-}
-
-nav li {
-  display: inline;
-  margin: 0 10px;
-}
-
-nav a {
+.navegacion-item {
   color: white;
-  text-decoration: none;
 }
 
-nav a:hover {
-  text-decoration: underline;
+.navegacion-item:hover {
+  color: #f0c040;
 }
-
 
 main {
   padding: 20px;
 }
 
+.main-bgcontenedor{
+  background-color: rgb(255, 255, 255);
+}
+
 h2 {
   color: #4b0082;
-  border-bottom: 2px solid #4b0082;
   padding-bottom: 5px;
 }
 
@@ -83,19 +101,18 @@ button:hover {
   background-color: #6a0dad;
 }
 
-
 table {
   border-collapse: collapse;
   width: 100%;
   margin-top: 10px;
 }
 
-th, td {
+th,
+td {
   border: 1px solid #ccc;
   padding: 6px;
   text-align: center;
 }
-
 
 form div {
   margin-bottom: 12px;
@@ -106,13 +123,14 @@ label {
   margin-bottom: 4px;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
   width: 100%;
   padding: 8px;
   border: 1px solid #aaa;
   border-radius: 4px;
 }
-
 
 footer {
   background-color: #222;
