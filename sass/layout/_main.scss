@@ -1,6 +1,6 @@
 /* Main */
 main{
-    padding: 40px 20px; /* Aumentar padding para más espacio */
+    padding: 40px 20px; 
     
     .hero-section {
         display: flex;
@@ -12,7 +12,7 @@ main{
         margin-bottom: 20px;
         color: white;
         height: 100vh;
-        animation: fade-in 1s ease-in-out; /* Animación de entrada */
+        animation: fade-in 1s ease-in-out; 
         h2 {
             font-size: 48px;
             margin-bottom: 20px;
@@ -29,11 +29,11 @@ main{
     }
 
     .main-bgcontenedor{
-        background-color: rgba(255, 255, 255, 0.95); /* Menos transparencia para mejor legibilidad */
-        padding: 1rem; /* Distancia mínima de 1rem al contenido */
+        background-color: rgba(255, 255, 255, 0.95); 
+        padding: 1rem; 
     
         section {
-            text-align: center; /* Centrar contenido */
+            text-align: center; 
         }
 
         .articulos {
@@ -52,7 +52,7 @@ main{
         article {
             background: white;
             margin: 15px 0;
-            padding: 20px; /* Aumentar padding */
+            padding: 20px; 
           
         }
     }

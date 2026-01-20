@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url(../../images/wallpaper_pagina.png);
+  background-image: url(../images/wallpaper_pagina.png);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -39,7 +39,7 @@ header .navbar-brand img {
 
 /* Main */
 main {
-  padding: 40px 20px; /* Aumentar padding para más espacio */
+  padding: 40px 20px;
 }
 main .hero-section {
   display: flex;
@@ -51,7 +51,7 @@ main .hero-section {
   margin-bottom: 20px;
   color: white;
   height: 100vh;
-  animation: fade-in 1s ease-in-out; /* Animación de entrada */
+  animation: fade-in 1s ease-in-out;
 }
 main .hero-section h2 {
   font-size: 48px;
@@ -65,11 +65,11 @@ main .hero-section p {
   text-align: center;
 }
 main .main-bgcontenedor {
-  background-color: rgba(255, 255, 255, 0.95); /* Menos transparencia para mejor legibilidad */
-  padding: 1rem; /* Distancia mínima de 1rem al contenido */
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 1rem;
 }
 main .main-bgcontenedor section {
-  text-align: center; /* Centrar contenido */
+  text-align: center;
 }
 main .main-bgcontenedor .articulos {
   display: grid;
@@ -87,7 +87,7 @@ main .main-bgcontenedor h1, main .main-bgcontenedor h2 {
 main .main-bgcontenedor article {
   background: white;
   margin: 15px 0;
-  padding: 20px; /* Aumentar padding */
+  padding: 20px;
 }
 
 footer {
@@ -212,7 +212,7 @@ label {
 }
 
 input, select, textarea {
-  max-width: 400px; /* Limitar ancho */
+  max-width: 400px;
   width: 100%;
   padding: 8px;
   border: 1px solid #aaa;
