@@ -1,0 +1,19 @@
+@use '../utilities/variables' as *;
+
+footer {
+    background-color: #222;
+    color: #eee;
+    padding: 15px;
+    margin-top: 20px;
+    h5 {
+        color: $primary-color;
+    }
+    li{
+        a{
+            color:white;
+        }
+        a:hover {
+            color: $primary-color;
+        }
+    }
+}

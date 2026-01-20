@@ -1,0 +1,59 @@
+@use '../utilities/variables' as *;
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 6px;
+  text-align: center;
+  max-width: 100%;  
+  overflow-x: auto;  
+  box-sizing: border-box;
+}
+
+.stat-header {
+  font-weight: bold;
+  background-color: $secondary-color;
+  color: white;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+.stat-value {
+  background-color: #f4f4f4;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.img-card-stand {
+  max-width: 200px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.card-body {
+  background-color: white;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 300px; /* Unificar altura mínima */
+}
+
+.card {
+  animation: slide-in 0.8s ease-out; /* Animación de entrada para cards */
+}
+
+.card .row {
+  display: flex;
+  align-items: flex-start;
+}
+
+.card .col-md-4 {
+  flex: 0 0 200px;
+}
+
+.card .col-md-8 {
+  flex: 1;
+}

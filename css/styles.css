@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../../images/wallpaper_pagina.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: "Shippori Antique", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+/* Header */
+header {
+  background-color: #4b0082;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+header h1 {
+  color: white;
+}
+header .navegacion-item {
+  color: white;
+}
+header .navegacion-item:hover {
+  color: #f0c040;
+}
+
+/* Main */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 20px;
+  color: white;
+  height: 100vh;
+}
+.hero-section h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: white;
+}
+.hero-section p {
+  font-size: 20px;
+  max-width: 600px;
+  text-align: center;
+}
+
+.joder {
+  background-color: red;
+}
+
+/*# sourceMappingURL=styles.css.map */

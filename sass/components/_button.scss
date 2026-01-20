@@ -1,0 +1,6 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.btn {
+  @include button-styles;
+}

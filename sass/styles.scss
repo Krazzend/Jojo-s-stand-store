@@ -1,0 +1,14 @@
+@use 'base/reset';
+@use 'layout/body';
+@use 'layout/header';
+@use 'layout/main';
+@use 'layout/footer';
+@use 'utilities/variables';
+@use 'utilities/mixins';
+@use 'utilities/animations';
+@use 'components/button';
+@use 'components/card';
+@use 'components/form';
+
+
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap");

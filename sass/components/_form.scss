@@ -1,0 +1,21 @@
+form div {
+  margin-bottom: 12px;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+input, select, textarea {
+  max-width: 400px; /* Limitar ancho */
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
