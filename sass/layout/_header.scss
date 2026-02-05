@@ -1,26 +1,25 @@
 /* Header */
 
-@use '../utilities/variables' as *;
+@use "../utilities/variables" as *;
 
 header {
   background-color: $secondary-color;
-  position: sticky; 
-  top: 0;           
+  position: sticky;
+  top: 0;
   z-index: 1000;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 
-    .navegacion-item {
-        color: white;
-    }
+  .navegacion-item {
+    color: white;
+  }
 
-    .navegacion-item:hover {
-        color: $primary-color;
-    }
+  .navegacion-item:hover {
+    color: $primary-color;
+  }
 
-    .navbar-brand img {
-        max-width: 500px;
-        height: auto;
-        max-height: 60px;
-    }
-
+  .navbar-brand img {
+    max-width: 500px;
+    height: auto;
+    max-height: 60px;
+  }
 }

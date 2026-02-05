@@ -76,11 +76,13 @@ main .main-bgcontenedor .articulos {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 20px;
 }
-main .main-bgcontenedor .articulos h1, main .main-bgcontenedor .articulos h2 {
+main .main-bgcontenedor .articulos h1,
+main .main-bgcontenedor .articulos h2 {
   grid-column: 1/-1;
   margin-bottom: 20px;
 }
-main .main-bgcontenedor h1, main .main-bgcontenedor h2 {
+main .main-bgcontenedor h1,
+main .main-bgcontenedor h2 {
   color: #4b0082;
   padding-bottom: 5px;
 }
@@ -211,7 +213,9 @@ label {
   margin-bottom: 4px;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
   max-width: 400px;
   width: 100%;
   padding: 8px;
