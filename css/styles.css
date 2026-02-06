@@ -96,6 +96,7 @@ main .main-bgcontenedor .articulos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(540px, 1fr));
   gap: 20px;
+  justify-items: center;
 }
 main .main-bgcontenedor .articulos h1,
 main .main-bgcontenedor .articulos h2 {
@@ -111,6 +112,7 @@ main .main-bgcontenedor article {
   background: white;
   margin: 0;
   padding: 20px;
+  width: 100%;
 }
 @media (max-width: 1024px) {
   main .main-bgcontenedor .articulos {
@@ -125,6 +127,59 @@ main .main-bgcontenedor article {
 @media (max-width: 576px) {
   main .main-bgcontenedor .articulos {
     grid-template-columns: 1fr;
+    justify-items: stretch;
+  }
+}
+main {
+  /* Opiniones / Testimonios */
+}
+main .opiniones {
+  padding: 1rem 0 2rem;
+}
+main .opiniones .testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  align-items: stretch;
+}
+main .opiniones .testimonial {
+  background: linear-gradient(180deg, #ffffff 0%, #f8f6ff 100%);
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(75, 0, 130, 0.12);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 140px;
+}
+main .opiniones .testimonial p {
+  font-style: italic;
+  margin-bottom: 12px;
+  color: #222;
+}
+main .opiniones .testimonial footer {
+  color: #4b0082;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+main .opiniones {
+  /* Avatar de autor */
+}
+main .opiniones .testimonial .avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 12px;
+  border: 3px solid rgba(75, 0, 130, 0.08);
+  background-color: #fff;
+}
+@media (max-width: 576px) {
+  main .opiniones .testimonial .avatar {
+    width: 64px;
+    height: 64px;
   }
 }
 

@@ -39,6 +39,7 @@ main {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(540px, 1fr));
       gap: 20px;
+      justify-items: center;
       h1,
       h2 {
         grid-column: 1 / -1;
@@ -54,6 +55,7 @@ main {
       background: white;
       margin: 0;
       padding: 20px;
+      width: 100%;
     }
   }
 
@@ -72,6 +74,62 @@ main {
   @media (max-width: 576px) {
     .main-bgcontenedor .articulos {
       grid-template-columns: 1fr;
+      justify-items: stretch;
+    }
+  }
+
+  /* Opiniones / Testimonios */
+  .opiniones {
+    padding: 1rem 0 2rem;
+
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .testimonial {
+      background: linear-gradient(180deg, #ffffff 0%, #f8f6ff 100%);
+      border-radius: 12px;
+      padding: 18px;
+      box-shadow: 0 6px 18px rgba(75, 0, 130, 0.12);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 140px;
+    }
+
+    .testimonial p {
+      font-style: italic;
+      margin-bottom: 12px;
+      color: #222;
+    }
+
+    .testimonial footer {
+      color: #4b0082;
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    /* Avatar de autor */
+    .testimonial .avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 12px;
+      border: 3px solid rgba(75, 0, 130, 0.08);
+      background-color: #fff;
+    }
+
+    @media (max-width: 576px) {
+      .testimonial .avatar {
+        width: 64px;
+        height: 64px;
+      }
     }
   }
 }
