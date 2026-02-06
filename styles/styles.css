@@ -130,9 +130,7 @@ main .main-bgcontenedor article {
     justify-items: stretch;
   }
 }
-main {
-  /* Opiniones / Testimonios */
-}
+
 main .opiniones {
   padding: 1rem 0 2rem;
 }
@@ -163,9 +161,7 @@ main .opiniones .testimonial footer {
   font-weight: 700;
   font-size: 0.95rem;
 }
-main .opiniones {
-  /* Avatar de autor */
-}
+
 main .opiniones .testimonial .avatar {
   width: 72px;
   height: 72px;
