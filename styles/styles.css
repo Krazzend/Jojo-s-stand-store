@@ -61,6 +61,7 @@ header .navbar-brand img {
 /* Main */
 main {
   padding: 40px 20px;
+  overflow-x: hidden;
 }
 main .hero-section {
   display: flex;
@@ -88,6 +89,8 @@ main .hero-section p {
 main .main-bgcontenedor {
   background-color: rgba(255, 255, 255, 0.95);
   padding: 1rem;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 main .main-bgcontenedor section {
   text-align: center;
@@ -113,6 +116,8 @@ main .main-bgcontenedor article {
   margin: 0;
   padding: 20px;
   width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 @media (max-width: 1024px) {
   main .main-bgcontenedor .articulos {
@@ -125,12 +130,21 @@ main .main-bgcontenedor article {
   }
 }
 @media (max-width: 576px) {
+  main {
+    padding: 20px 10px;
+  }
+  main .main-bgcontenedor {
+    padding: 0.75rem;
+  }
   main .main-bgcontenedor .articulos {
     grid-template-columns: 1fr;
     justify-items: stretch;
+    gap: 15px;
+  }
+  main .main-bgcontenedor article {
+    padding: 15px;
   }
 }
-
 main .opiniones {
   padding: 1rem 0 2rem;
 }
@@ -161,7 +175,6 @@ main .opiniones .testimonial footer {
   font-weight: 700;
   font-size: 0.95rem;
 }
-
 main .opiniones .testimonial .avatar {
   width: 72px;
   height: 72px;
@@ -236,13 +249,131 @@ footer li a:hover {
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto auto;
   gap: 6px;
   text-align: center;
   max-width: 100%;
   overflow-x: auto;
   box-sizing: border-box;
+  width: 100%;
 }
 
+.stats-grid > .stat-header:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.stats-grid > .stat-header:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.stats-grid > .stat-header:nth-child(3) {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.stats-grid > .stat-header:nth-child(4) {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.stats-grid > .stat-header:nth-child(5) {
+  grid-column: 5;
+  grid-row: 1;
+}
+
+.stats-grid > .stat-header:nth-child(6) {
+  grid-column: 6;
+  grid-row: 1;
+}
+
+.stats-grid > .stat-value:nth-child(7) {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.stats-grid > .stat-value:nth-child(8) {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.stats-grid > .stat-value:nth-child(9) {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.stats-grid > .stat-value:nth-child(10) {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.stats-grid > .stat-value:nth-child(11) {
+  grid-column: 5;
+  grid-row: 2;
+}
+
+.stats-grid > .stat-value:nth-child(12) {
+  grid-column: 6;
+  grid-row: 2;
+}
+
+@media (max-width: 576px) {
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto auto;
+    gap: 4px;
+    overflow-x: visible;
+  }
+  .stats-grid > .stat-header:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .stats-grid > .stat-header:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .stats-grid > .stat-header:nth-child(3) {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .stats-grid > .stat-header:nth-child(4) {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .stats-grid > .stat-header:nth-child(5) {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .stats-grid > .stat-header:nth-child(6) {
+    grid-column: 3;
+    grid-row: 3;
+  }
+  .stats-grid > .stat-value:nth-child(7) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .stats-grid > .stat-value:nth-child(8) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .stats-grid > .stat-value:nth-child(9) {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  .stats-grid > .stat-value:nth-child(10) {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .stats-grid > .stat-value:nth-child(11) {
+    grid-column: 2;
+    grid-row: 4;
+  }
+  .stats-grid > .stat-value:nth-child(12) {
+    grid-column: 3;
+    grid-row: 4;
+  }
+}
 .stat-header {
   font-weight: bold;
   background-color: #4b0082;
@@ -279,12 +410,16 @@ footer li a:hover {
 .card {
   animation: slide-in 0.8s ease-out;
   margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
 }
 
 .card .row {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  margin: 0;
 }
 
 .card .col-md-4 {
@@ -312,10 +447,23 @@ footer li a:hover {
   .card .col-md-4,
   .card .col-md-8 {
     flex: 0 0 100%;
+    padding: 0;
   }
   .img-card-stand {
     width: 140px;
     height: 140px;
+  }
+  .card-body {
+    padding: 15px;
+    overflow-x: hidden;
+  }
+  .stats-grid {
+    overflow-x: hidden;
+  }
+  .stat-header,
+  .stat-value {
+    padding: 4px 3px;
+    font-size: 12px;
   }
 }
 form div {
