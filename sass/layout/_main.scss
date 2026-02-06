@@ -30,18 +30,21 @@ main {
   .main-bgcontenedor {
     background-color: rgba(255, 255, 255, 0.95);
     padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
 
     section {
       text-align: center;
     }
 
     .articulos {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 20px;
       h1,
       h2 {
-        grid-column: 1 / -1;
+        flex-basis: 100%;
         margin-bottom: 20px;
       }
     }
@@ -52,8 +55,9 @@ main {
     }
     article {
       background: white;
-      margin: 15px 0;
+      margin: 0;
       padding: 20px;
+      flex: 0 1 auto;
     }
   }
 }
