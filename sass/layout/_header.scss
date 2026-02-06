@@ -20,19 +20,33 @@ header {
 
   .navbar-brand {
     flex-shrink: 0;
-    max-width: 200px;
+    max-width: 400px;
   }
 
   .navbar-brand img {
     max-width: 100%;
     height: auto;
-    max-height: 60px;
+    max-height: 80px;
     display: block;
+  }
+}
+
+@media (max-width: 992px) {
+  header .navbar-brand {
+    max-width: 300px;
+  }
+
+  header .navbar-brand img {
+    max-height: 70px;
   }
 }
 
 @media (max-width: 576px) {
   header .navbar-brand {
-    max-width: 150px;
+    max-width: 200px;
+  }
+
+  header .navbar-brand img {
+    max-height: 60px;
   }
 }
