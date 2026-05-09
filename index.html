@@ -87,7 +87,7 @@
       </section>
       <div class="main-bgcontenedor">
         <section class="articulos">
-          <div class="d-flex justify-content-between align-items-center mb-4">
+          <div class="d-flex justify-content-between align-items-center mb-4 flex-column flex-md-row gap-3">
             <div>
               <h2>Artículos destacados</h2>
               <p class="text-muted mb-0">Selecciona tus Stands favoritos y agrega al carrito.</p>
@@ -101,6 +101,17 @@
             >
               Ver carrito
             </button>
+          </div>
+          <div class="row mb-4">
+            <div class="col-12 col-md-6">
+              <input
+                id="searchInput"
+                type="search"
+                class="form-control"
+                placeholder="Buscar Stand por nombre o descripción..."
+                aria-label="Buscar producto"
+              />
+            </div>
           </div>
           <div id="productGrid" class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4"></div>
         </section>

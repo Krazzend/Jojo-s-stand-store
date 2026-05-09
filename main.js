@@ -1,4 +1,5 @@
 const productGrid = document.getElementById("productGrid");
+const searchInput = document.getElementById("searchInput");
 const cartCount = document.getElementById("cartCount");
 const cartItems = document.getElementById("cartItems");
 const cartTotal = document.getElementById("cartTotal");
@@ -8,6 +9,7 @@ const CART_STORAGE_KEY = "standStoreCart";
 
 let products = [];
 let cart = [];
+let searchTerm = "";
 
 const formatCurrency = (value) => value.toLocaleString("es-AR");
 
@@ -79,7 +81,23 @@ const renderProductCard = (product) => {
   `;
 };
 
+const getFilteredProducts = () => {
+  if (!searchTerm.trim()) {
+    return products;
+  }
+
+  const normalizedSearch = searchTerm.trim().toLowerCase();
+  return products.filter((product) => {
+    return (
+      product.name.toLowerCase().includes(normalizedSearch) ||
+      product.description.toLowerCase().includes(normalizedSearch)
+    );
+  });
+};
+
 const renderProducts = () => {
+  const visibleProducts = getFilteredProducts();
+
   if (!products.length) {
     productGrid.innerHTML = `
       <div class="col">
@@ -89,7 +107,16 @@ const renderProducts = () => {
     return;
   }
 
-  productGrid.innerHTML = products.map(renderProductCard).join("");
+  if (!visibleProducts.length) {
+    productGrid.innerHTML = `
+      <div class="col">
+        <div class="alert alert-info">No se encontraron productos que coincidan con la búsqueda.</div>
+      </div>
+    `;
+    return;
+  }
+
+  productGrid.innerHTML = visibleProducts.map(renderProductCard).join("");
   document.querySelectorAll(".add-to-cart-btn").forEach((button) => {
     button.addEventListener("click", () => {
       const productId = button.dataset.productId;
@@ -257,6 +284,13 @@ const initApp = () => {
     });
 
   checkoutButton.addEventListener("click", handleCheckout);
+
+  if (searchInput) {
+    searchInput.addEventListener("input", () => {
+      searchTerm = searchInput.value;
+      renderProducts();
+    });
+  }
 };
 
 document.addEventListener("DOMContentLoaded", initApp);
