@@ -1,0 +1,98 @@
+[
+  {
+    "id": "star_platinum",
+    "name": "Star Platinum",
+    "description": "Stand tan fuerte como para destruir diamantes con sus puños y muy preciso para tareas delicadas.",
+    "price": 300000,
+    "stock": 6,
+    "image": "./images/star_platinum.png",
+    "stats": {
+      "Poder": "A",
+      "Velocidad": "A",
+      "Rango": "C",
+      "Resistencia": "A",
+      "Precisión": "A",
+      "Potencial": "A"
+    }
+  },
+  {
+    "id": "the_world",
+    "name": "The World",
+    "description": "Stand devoto a detener el tiempo y atacar con movimientos extremadamente rápidos.",
+    "price": 500000,
+    "stock": 4,
+    "image": "./images/the_world.webp",
+    "stats": {
+      "Poder": "A",
+      "Velocidad": "A",
+      "Rango": "C",
+      "Resistencia": "A",
+      "Precisión": "B",
+      "Potencial": "B"
+    }
+  },
+  {
+    "id": "crazy_diamond",
+    "name": "Crazy Diamond",
+    "description": "Capaz de curar y revertir objetos a su estado original con gran precisión.",
+    "price": 200000,
+    "stock": 5,
+    "image": "./images/crazy_diamond.webp",
+    "stats": {
+      "Poder": "A",
+      "Velocidad": "A",
+      "Rango": "D",
+      "Resistencia": "B",
+      "Precisión": "B",
+      "Potencial": "C"
+    }
+  },
+  {
+    "id": "soft_and_wet",
+    "name": "Soft & Wet",
+    "description": "Stand que roba características usando burbujas para obtener ventajas tácticas.",
+    "price": 250000,
+    "stock": 3,
+    "image": "./images/soft_and_wet.png",
+    "stats": {
+      "Poder": "C",
+      "Velocidad": "B",
+      "Rango": "D",
+      "Resistencia": "B",
+      "Precisión": "C",
+      "Potencial": "A"
+    }
+  },
+  {
+    "id": "gold_experience",
+    "name": "Gold Experience",
+    "description": "Stand que convierte la energía en vida y reacciona con gran velocidad.",
+    "price": 280000,
+    "stock": 4,
+    "image": "./images/gold_experience.png",
+    "stats": {
+      "Poder": "B",
+      "Velocidad": "A",
+      "Rango": "C",
+      "Resistencia": "A",
+      "Precisión": "A",
+      "Potencial": "B"
+    }
+  },
+  {
+    "id": "killer_queen",
+    "name": "Killer Queen",
+    "description": "Stand letal con bombas que pueden detonar a voluntad y dejar rastro invisible.",
+    "price": 270000,
+    "stock": 2,
+    "image": "./images/killer_queen.png",
+    "stats": {
+      "Poder": "A",
+      "Velocidad": "B",
+      "Rango": "C",
+      "Resistencia": "B",
+      "Precisión": "A",
+      "Potencial": "A"
+    }
+  }
+]

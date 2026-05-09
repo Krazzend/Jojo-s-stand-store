@@ -64,6 +64,15 @@
                 >
               </li>
             </ul>
+            <button
+              class="btn btn-outline-light mt-3 mt-lg-0"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#cartOffcanvas"
+              aria-controls="cartOffcanvas"
+            >
+              🛒 Carrito (<span id="cartCount">0</span>)
+            </button>
           </div>
         </div>
       </nav>
@@ -73,148 +82,27 @@
       <section>
         <div class="hero-section">
           <h1>Bienvenido a Stand Store</h1>
-          <p>¡Libera tu espiritu de lucha!</p>
+          <p>¡Libera tu espíritu de lucha!</p>
         </div>
       </section>
       <div class="main-bgcontenedor">
         <section class="articulos">
-          <h2>Artículos destacados</h2>
-          <article>
-            <div class="card mb-3" style="max-width: 540px">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img
-                    src="./images/star_platinum.png"
-                    class="img-fluid rounded-start"
-                    alt="Stand Star Platinum"
-                  />
-                </div>
-
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Star Platinum</h5>
-
-                    <p class="card-text">
-                      Stand tan fuerte como para poder destruir diamantes con
-                      sus puños y a la vez tan preciso como para poder hacer una
-                      cirugía cerebral sin consecuencias.
-                    </p>
-
-                    <details>
-                      <summary>Estadísticas</summary>
-                      <div class="stats-grid mt-2">
-                        <div class="stat-header">Poder</div>
-                        <div class="stat-header">Velocidad</div>
-                        <div class="stat-header">Rango</div>
-                        <div class="stat-header">Resistencia</div>
-                        <div class="stat-header">Precisión</div>
-                        <div class="stat-header">Potencial</div>
-
-                        <div class="stat-value">A</div>
-                        <div class="stat-value">A</div>
-                        <div class="stat-value">C</div>
-                        <div class="stat-value">A</div>
-                        <div class="stat-value">A</div>
-                        <div class="stat-value">A</div>
-                      </div>
-                    </details>
-
-                    <p class="card-text mt-2">
-                      <strong>Precio:</strong> $300000
-                    </p>
-
-                    <button class="btn">Comprar</button>
-                  </div>
-                </div>
-              </div>
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <div>
+              <h2>Artículos destacados</h2>
+              <p class="text-muted mb-0">Selecciona tus Stands favoritos y agrega al carrito.</p>
             </div>
-          </article>
-          <article>
-            <div class="card mb-3" style="max-width: 540px">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img
-                    src="./images/the_world.webp"
-                    class="img-fluid rounded-start"
-                    alt="Stand The World"
-                  />
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">The World</h5>
-                    <p class="card-text">
-                      Stand fuerte y ágil que cuenta con la gran habilidad de
-                      poder detener el tiempo.
-                    </p>
-                    <details>
-                      <summary>Estadísticas</summary>
-                      <div class="stats-grid mt-2">
-                        <div class="stat-header">Poder</div>
-                        <div class="stat-header">Velocidad</div>
-                        <div class="stat-header">Rango</div>
-                        <div class="stat-header">Resistencia</div>
-                        <div class="stat-header">Precisión</div>
-                        <div class="stat-header">Potencial</div>
-                        <div class="stat-value">A</div>
-                        <div class="stat-value">A</div>
-                        <div class="stat-value">C</div>
-                        <div class="stat-value">A</div>
-                        <div class="stat-value">B</div>
-                        <div class="stat-value">B</div>
-                      </div>
-                    </details>
-                    <p class="card-text mt-2">
-                      <strong>Precio:</strong> $500000
-                    </p>
-                    <button class="btn">Comprar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article>
-            <div class="card mb-3" style="max-width: 540px">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img
-                    src="./images/crazy_diamond.webp"
-                    class="img-fluid rounded-start"
-                    alt="Stand Crazy Diamond"
-                  />
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Crazy Diamond</h5>
-                    <p class="card-text">
-                      Stand con la capacidad de curar personas y revertir
-                      objetos a su estado original.
-                    </p>
-                    <details>
-                      <summary>Estadísticas</summary>
-                      <div class="stats-grid mt-2">
-                        <div class="stat-header">Poder</div>
-                        <div class="stat-header">Velocidad</div>
-                        <div class="stat-header">Rango</div>
-                        <div class="stat-header">Resistencia</div>
-                        <div class="stat-header">Precisión</div>
-                        <div class="stat-header">Potencial</div>
-                        <div class="stat-value">A</div>
-                        <div class="stat-value">A</div>
-                        <div class="stat-value">D</div>
-                        <div class="stat-value">B</div>
-                        <div class="stat-value">B</div>
-                        <div class="stat-value">C</div>
-                      </div>
-                    </details>
-                    <p class="card-text mt-2">
-                      <strong>Precio:</strong> $200000
-                    </p>
-                    <button class="btn">Comprar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
+            <button
+              class="btn btn-primary"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#cartOffcanvas"
+              aria-controls="cartOffcanvas"
+            >
+              Ver carrito
+            </button>
+          </div>
+          <div id="productGrid" class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4"></div>
         </section>
         <section>
           <h2>Sobre nosotros</h2>
@@ -307,5 +195,26 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3" id="toastContainer"></div>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="cartOffcanvasLabel">Mi carrito</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column">
+        <div id="cartItems" class="list-group mb-3"></div>
+        <div class="mt-auto">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <strong>Total</strong>
+            <strong>$<span id="cartTotal">0</span></strong>
+          </div>
+          <button id="checkoutButton" class="btn btn-success w-100" type="button">Finalizar compra</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js" defer></script>
   </body>
 </html>
